@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+.swimlane-canvas {
+  position: relative;
+  min-height: 160px;
+}
+
+.event-wrapper {
+  position: absolute;
+  height: 110px;
+}

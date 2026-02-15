@@ -1,0 +1,85 @@
+<div class="app-shell">
+
+  <!-- ━━━ Header ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <header class="app-header">
+
+    <!-- Logo -->
+    <div class="header-left">
+      <div class="logo">
+        <div class="logo-diamond">◆</div>
+        <div class="logo-text">
+          <h1>Timeline</h1>
+          <p>Parallel History</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Track Selector Dropdown -->
+    <div class="header-center">
+      <div class="track-dropdown">
+        <button class="dropdown-trigger" (click)="toggleDropdown()">
+          <span class="trigger-dots">
+            @for (track of dataService.activeTracks(); track track.id) {
+              <span class="trigger-dot" [style.backgroundColor]="track.accentHex"></span>
+            }
+          </span>
+          <span class="trigger-label">Tracks</span>
+          <span class="trigger-count">{{ activeCount() }}/{{ totalCount() }}</span>
+          <span class="trigger-chevron" [class.open]="trackDropdownOpen()">▾</span>
+        </button>
+
+        @if (trackDropdownOpen()) {
+          <div class="dropdown-panel">
+            <div class="dropdown-header">
+              <span class="dropdown-title">Visible Tracks</span>
+              <span class="dropdown-hint">max {{ MAX_LANES }}</span>
+            </div>
+            @for (track of dataService.availableTracks(); track track.id) {
+              <label
+                class="dropdown-item"
+                [class.checked]="dataService.activeTrackIds().includes(track.id)">
+                <input
+                  type="checkbox"
+                  class="sr-only"
+                  [checked]="dataService.activeTrackIds().includes(track.id)"
+                  (change)="dataService.toggleTrack(track.id)">
+                <span class="item-check" [style.--accent]="track.accentHex">
+                  @if (dataService.activeTrackIds().includes(track.id)) {
+                    <span class="check-icon">✓</span>
+                  }
+                </span>
+                <span class="item-dot" [style.backgroundColor]="track.accentHex"></span>
+                <span class="item-name">{{ track.name }}</span>
+              </label>
+            }
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- Zoom Slider -->
+    <div class="header-right">
+      <div class="zoom-control">
+        <span class="zoom-icon">🔭</span>
+        <input
+          type="range"
+          class="zoom-slider"
+          [min]="MIN_ZOOM"
+          [max]="MAX_ZOOM"
+          [value]="dataService.pixelsPerYear()"
+          (input)="onZoomChange($event)">
+        <span class="zoom-label-text">{{ zoomLabel() }}</span>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ━━━ Main Timeline ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <main class="app-main">
+    <app-timeline-container />
+  </main>
+
+  <!-- ━━━ Evidence Panel (overlay) ━━━━━━━━━━━━━━━━━━━━ -->
+  <app-evidence-panel />
+
+</div>

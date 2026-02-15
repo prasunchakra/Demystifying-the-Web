@@ -1,0 +1,46 @@
+[
+  {
+    "id": "c1",
+    "title": "Indian People's Theatre Association",
+    "date": "1946-01-01",
+    "category": "regional",
+    "track": "cultural",
+    "summary": "IPTA becomes a major cultural force, using theatre for social awakening.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Indian_People%27s_Theatre_Association", "title": "Wikipedia: IPTA" }
+    ]
+  },
+  {
+    "id": "c2",
+    "title": "Neecha Nagar Wins Grand Prix at Cannes",
+    "date": "1946-09-20",
+    "category": "regional",
+    "track": "cultural",
+    "summary": "Chetan Anand's film wins the Grand Prize at the inaugural Cannes Film Festival.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Neecha_Nagar", "title": "Wikipedia: Neecha Nagar" }
+    ]
+  },
+  {
+    "id": "c3",
+    "title": "Pather Panchali — Novel Published",
+    "date": "1947-01-01",
+    "category": "regional",
+    "track": "cultural",
+    "summary": "Bibhutibhushan Bandyopadhyay's masterwork, later adapted by Satyajit Ray.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Pather_Panchali_(novel)", "title": "Wikipedia: Pather Panchali" }
+    ]
+  },
+  {
+    "id": "c4",
+    "title": "Progressive Writers' Movement Peak",
+    "date": "1947-06-01",
+    "category": "regional",
+    "track": "cultural",
+    "summary": "The Progressive Writers' Association reaches its cultural zenith in South Asia.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Progressive_Writers%27_Movement", "title": "Wikipedia: Progressive Writers' Movement" }
+    ]
+  }
+]

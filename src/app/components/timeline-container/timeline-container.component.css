@@ -1,0 +1,107 @@
+/* ── Viewport (the single scroll container) ──────────── */
+:host {
+  display: block;
+  height: 100%;
+}
+
+.timeline-viewport {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+/* ── Canvas (total width of all content) ─────────────── */
+.timeline-canvas {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* ── Row layout ──────────────────────────────────────── */
+.timeline-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ── Lane label (sticky left column) ─────────────────── */
+.lane-label {
+  width: 200px;
+  min-width: 200px;
+  position: sticky;
+  left: 0;
+  z-index: 12;
+  background: rgba(15, 23, 42, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-left: 3px solid transparent;
+  border-right: 1px solid rgba(148, 163, 184, 0.06);
+  padding: 16px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 300ms;
+}
+
+.lane-label:hover {
+  background: rgba(30, 41, 59, 0.95);
+}
+
+.axis-label-cell {
+  width: 200px;
+  min-width: 200px;
+  position: sticky;
+  left: 0;
+  z-index: 30;
+  background: rgba(15, 23, 42, 0.98);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(148, 163, 184, 0.06);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+/* ── Axis row (sticky top) ───────────────────────────── */
+.axis-row {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(15, 23, 42, 0.98);
+  backdrop-filter: blur(12px);
+}
+
+.era-text {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #475569;
+  text-transform: uppercase;
+}
+
+/* ── Label content ───────────────────────────────────── */
+.label-emoji {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.label-name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  line-height: 1.3;
+}
+
+/* ── Lane content area ───────────────────────────────── */
+.lane-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Swimlane row separator ──────────────────────────── */
+.swimlane-row {
+  border-top: 1px solid rgba(148, 163, 184, 0.06);
+}
+.swimlane-row:last-child {
+  flex: 1;
+}

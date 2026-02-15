@@ -1,0 +1,49 @@
+:host {
+  display: block;
+}
+
+.axis-canvas {
+  position: relative;
+  height: 48px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.tick {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.tick-line {
+  width: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+.major .tick-line {
+  height: 100%;
+  background: rgba(148, 163, 184, 0.25);
+}
+
+.minor .tick-line {
+  height: 40%;
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.tick-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #64748b;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+
+.major .tick-label {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-weight: 700;
+}

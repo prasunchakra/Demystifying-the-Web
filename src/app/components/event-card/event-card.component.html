@@ -1,0 +1,25 @@
+<div
+  class="card-inner"
+  [style.borderColor]="accentHex() + '30'"
+  (click)="clicked.emit()">
+
+  <!-- Accent top-bar -->
+  <div
+    class="accent-bar"
+    [style.background]="'linear-gradient(135deg, ' + accentHex() + ', ' + accentHex() + '60)'">
+  </div>
+
+  <!-- Content -->
+  <div class="card-body">
+    <h4 class="card-title">{{ event().title }}</h4>
+    <time class="card-date">{{ event().date | date:'mediumDate' }}</time>
+    <p class="card-summary">{{ event().summary }}</p>
+  </div>
+
+  <!-- Evidence count badge -->
+  @if (event().evidence.length > 0) {
+    <div class="evidence-badge" [style.backgroundColor]="accentHex()">
+      {{ event().evidence.length }}
+    </div>
+  }
+</div>

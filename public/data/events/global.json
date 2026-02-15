@@ -1,0 +1,90 @@
+[
+  {
+    "id": "g1",
+    "title": "End of World War II",
+    "date": "1945-09-02",
+    "category": "global",
+    "track": "global",
+    "summary": "Japan signs the instrument of surrender aboard USS Missouri, ending WWII.",
+    "description": "The surrender ceremony took place aboard the USS Missouri in Tokyo Bay on September 2, 1945, marking the end of the deadliest conflict in human history. Over 70 million people perished during the six-year war.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Surrender_of_Japan_-_USS_Missouri.jpg/800px-Surrender_of_Japan_-_USS_Missouri.jpg",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/oSjENGmfxbA", "title": "WWII Surrender Ceremony – Original Footage" },
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan", "title": "Wikipedia: Surrender of Japan" }
+    ]
+  },
+  {
+    "id": "g2",
+    "title": "United Nations Founded",
+    "date": "1945-10-24",
+    "category": "global",
+    "track": "global",
+    "summary": "The United Nations officially comes into existence.",
+    "description": "The UN Charter was ratified by the five permanent members of the Security Council—China, France, the Soviet Union, the United Kingdom, and the United States—and a majority of other signatories.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/United_Nations", "title": "Wikipedia: United Nations" },
+      { "type": "image", "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/UN_General_Assembly_hall.jpg/800px-UN_General_Assembly_hall.jpg", "title": "UN General Assembly Hall" }
+    ]
+  },
+  {
+    "id": "g3",
+    "title": "Truman Doctrine — Cold War Begins",
+    "date": "1947-03-12",
+    "category": "global",
+    "track": "global",
+    "summary": "President Truman pledges to contain Soviet expansion, marking the dawn of the Cold War.",
+    "description": "The Truman Doctrine established that the United States would provide political, military, and economic assistance to all democratic nations under threat from external or internal authoritarian forces. This policy defined American foreign policy for the next four decades.",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/y9HjvHZfCUI", "title": "The Cold War Explained" },
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Truman_Doctrine", "title": "Wikipedia: Truman Doctrine" }
+    ]
+  },
+  {
+    "id": "g4",
+    "title": "Marshall Plan Announced",
+    "date": "1947-06-05",
+    "category": "global",
+    "track": "global",
+    "summary": "Secretary of State George Marshall outlines the European Recovery Program.",
+    "description": "The Marshall Plan provided over $13 billion in economic assistance to help rebuild Western European economies after WWII. It was instrumental in preventing the spread of communism in Europe.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Marshall_Plan", "title": "Wikipedia: Marshall Plan" }
+    ]
+  },
+  {
+    "id": "g5",
+    "title": "NATO Established",
+    "date": "1949-04-04",
+    "category": "global",
+    "track": "global",
+    "summary": "The North Atlantic Treaty Organization is formed by 12 founding nations.",
+    "description": "NATO was established as a collective defense alliance, with the principle that an armed attack against one member is considered an attack against all.",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/3X4txHQFkqE", "title": "History of NATO" },
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/NATO", "title": "Wikipedia: NATO" }
+    ]
+  },
+  {
+    "id": "g6",
+    "title": "People's Republic of China Proclaimed",
+    "date": "1949-10-01",
+    "category": "global",
+    "track": "global",
+    "summary": "Mao Zedong proclaims the People's Republic of China in Tiananmen Square.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Chinese_Communist_Revolution", "title": "Wikipedia: Chinese Communist Revolution" }
+    ]
+  },
+  {
+    "id": "g7",
+    "title": "Korean War Begins",
+    "date": "1950-06-25",
+    "endDate": "1953-07-27",
+    "category": "global",
+    "track": "global",
+    "summary": "North Korean forces invade South Korea, beginning a three-year conflict.",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/wJ0jfBaIOzk", "title": "The Korean War – Documentary" }
+    ]
+  }
+]

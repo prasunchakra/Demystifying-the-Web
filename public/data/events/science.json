@@ -1,0 +1,61 @@
+[
+  {
+    "id": "s1",
+    "title": "ENIAC — First Electronic Computer",
+    "date": "1946-02-14",
+    "category": "global",
+    "track": "science",
+    "summary": "ENIAC is unveiled at the University of Pennsylvania—the dawn of the computer age.",
+    "description": "The Electronic Numerical Integrator and Computer (ENIAC) was the first general-purpose electronic computer. It weighed 30 tons and occupied an entire room.",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/bGk9W65vXNA", "title": "The Story of ENIAC" },
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/ENIAC", "title": "Wikipedia: ENIAC" }
+    ]
+  },
+  {
+    "id": "s2",
+    "title": "Transistor Invented",
+    "date": "1947-12-23",
+    "category": "global",
+    "track": "science",
+    "summary": "Bell Labs demonstrates the first transistor, revolutionizing electronics forever.",
+    "description": "John Bardeen, Walter Brattain, and William Shockley invented the point-contact transistor at Bell Telephone Laboratories, enabling the miniaturization of electronic circuits that would lead to modern computing.",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/7ukDKVHnac4", "title": "Invention of the Transistor" },
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Transistor", "title": "Wikipedia: Transistor" }
+    ]
+  },
+  {
+    "id": "s3",
+    "title": "Holography Invented",
+    "date": "1947-01-01",
+    "category": "global",
+    "track": "science",
+    "summary": "Dennis Gabor develops the theory of holography, later earning a Nobel Prize.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Holography", "title": "Wikipedia: Holography" }
+    ]
+  },
+  {
+    "id": "s4",
+    "title": "Big Bang Theory — \u03B1\u03B2\u03B3 Paper",
+    "date": "1948-04-01",
+    "category": "global",
+    "track": "science",
+    "summary": "Alpher, Bethe, and Gamow publish the landmark paper on nucleosynthesis.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Alpher%E2%80%93Bethe%E2%80%93Gamow_paper", "title": "Wikipedia: Alpher–Bethe–Gamow Paper" }
+    ]
+  },
+  {
+    "id": "s5",
+    "title": "Manchester Baby — Stored-Program Computer",
+    "date": "1948-06-21",
+    "category": "global",
+    "track": "science",
+    "summary": "The Manchester Baby runs the first program stored in electronic memory.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Manchester_Baby", "title": "Wikipedia: Manchester Baby" }
+    ]
+  }
+]

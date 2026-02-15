@@ -1,0 +1,99 @@
+@if (event()) {
+  <div class="overlay" [@fadeBackdrop] (click)="close()">
+    <div class="panel" [@slidePanel] (click)="$event.stopPropagation()">
+
+      <!-- Close button -->
+      <button class="close-btn" (click)="close()" aria-label="Close panel">
+        <span>✕</span>
+      </button>
+
+      <!-- Scrollable body -->
+      <div class="panel-scroll">
+
+        <!-- Hero image -->
+        @if (event()!.imageUrl) {
+          <div class="hero">
+            <img [src]="event()!.imageUrl" [alt]="event()!.title">
+            <div class="hero-fade"></div>
+          </div>
+        }
+
+        <div class="panel-body">
+
+          <!-- Category pill -->
+          <div
+            class="category-pill"
+            [style.backgroundColor]="getCategoryColor(event()!.category)">
+            {{ event()!.category | uppercase }}
+          </div>
+
+          <!-- Title -->
+          <h2 class="panel-title">{{ event()!.title }}</h2>
+
+          <!-- Date range -->
+          <div class="panel-date">
+            <span class="date-icon">📅</span>
+            <span>{{ event()!.date | date:'longDate' }}</span>
+            @if (event()!.endDate) {
+              <span class="date-sep">→</span>
+              <span>{{ event()!.endDate | date:'longDate' }}</span>
+            }
+          </div>
+
+          <!-- Description -->
+          <p class="panel-desc">
+            {{ event()!.description || event()!.summary }}
+          </p>
+
+          <!-- Evidence grid -->
+          @if (event()!.evidence.length > 0) {
+            <h3 class="evidence-heading">
+              <span>📚</span> Sources &amp; Evidence
+            </h3>
+
+            <div class="evidence-grid">
+              @for (item of event()!.evidence; track item.url) {
+                <div class="evidence-card">
+
+                  @if (item.type === 'youtube') {
+                    <div class="video-wrap">
+                      <iframe
+                        [src]="item.url | safe"
+                        title="Video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                    <p class="ev-label">🎬 {{ item.title }}</p>
+                  }
+
+                  @if (item.type === 'image') {
+                    <img [src]="item.url" [alt]="item.title" class="ev-img">
+                    <p class="ev-label">🖼️ {{ item.title }}</p>
+                  }
+
+                  @if (item.type === 'document') {
+                    <a
+                      [href]="item.url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="doc-link">
+                      <div class="doc-icon-box">📄</div>
+                      <div class="doc-info">
+                        <span class="doc-title">{{ item.title }}</span>
+                        <span class="doc-action">Open in new tab ↗</span>
+                      </div>
+                    </a>
+                  }
+
+                </div>
+              }
+            </div>
+          }
+
+        </div>
+      </div>
+    </div>
+  </div>
+}

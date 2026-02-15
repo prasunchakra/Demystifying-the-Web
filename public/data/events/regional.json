@@ -1,0 +1,76 @@
+[
+  {
+    "id": "r1",
+    "title": "Great Calcutta Killings",
+    "date": "1946-08-16",
+    "endDate": "1946-08-19",
+    "category": "regional",
+    "track": "regional",
+    "summary": "Communal violence erupts in Calcutta on Direct Action Day, killing thousands.",
+    "description": "The Muslim League called for a \"Direct Action Day\" on August 16, 1946, demanding the creation of Pakistan. The ensuing violence in Calcutta left an estimated 4,000–10,000 people dead.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Direct_Action_Day", "title": "Wikipedia: Direct Action Day" }
+    ]
+  },
+  {
+    "id": "r2",
+    "title": "Noakhali Riots",
+    "date": "1946-10-10",
+    "endDate": "1946-10-18",
+    "category": "regional",
+    "track": "regional",
+    "summary": "Communal riots break out in the Noakhali district of Bengal.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/1946_Noakhali_riots", "title": "Wikipedia: Noakhali Riots" }
+    ]
+  },
+  {
+    "id": "r3",
+    "title": "Asian Relations Conference",
+    "date": "1947-03-23",
+    "endDate": "1947-04-02",
+    "category": "regional",
+    "track": "regional",
+    "summary": "First major inter-Asian conference held in New Delhi, chaired by Nehru.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Asian_Relations_Conference", "title": "Wikipedia: Asian Relations Conference" }
+    ]
+  },
+  {
+    "id": "r4",
+    "title": "Partition of Bengal",
+    "date": "1947-08-14",
+    "category": "regional",
+    "track": "regional",
+    "summary": "Bengal is divided between India (West Bengal) and Pakistan (East Bengal).",
+    "description": "The partition displaced millions of people and triggered one of the largest mass migrations in human history, accompanied by widespread communal violence.",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/DrcCuiaVHfE", "title": "Partition of India – Documentary" },
+      { "type": "image", "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Partition_of_India-en.svg/800px-Partition_of_India-en.svg.png", "title": "Map of the 1947 Partition" }
+    ]
+  },
+  {
+    "id": "r5",
+    "title": "Telangana Rebellion",
+    "date": "1946-07-04",
+    "endDate": "1948-09-17",
+    "category": "regional",
+    "track": "regional",
+    "summary": "Armed peasant revolt in the Telangana region against the Nizam of Hyderabad.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Telangana_rebellion", "title": "Wikipedia: Telangana Rebellion" }
+    ]
+  },
+  {
+    "id": "r6",
+    "title": "Operation Polo — Hyderabad",
+    "date": "1948-09-13",
+    "endDate": "1948-09-17",
+    "category": "regional",
+    "track": "regional",
+    "summary": "Indian military operation annexes the princely state of Hyderabad.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Annexation_of_Hyderabad", "title": "Wikipedia: Annexation of Hyderabad" }
+    ]
+  }
+]

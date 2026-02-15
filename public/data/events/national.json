@@ -1,0 +1,78 @@
+[
+  {
+    "id": "n1",
+    "title": "Royal Indian Navy Mutiny",
+    "date": "1946-02-18",
+    "endDate": "1946-02-23",
+    "category": "national",
+    "track": "national",
+    "summary": "Indian sailors revolt against the British Royal Navy, accelerating independence.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Royal_Indian_Navy_mutiny", "title": "Wikipedia: RIN Mutiny" }
+    ]
+  },
+  {
+    "id": "n2",
+    "title": "Cabinet Mission to India",
+    "date": "1946-03-24",
+    "endDate": "1946-06-29",
+    "category": "national",
+    "track": "national",
+    "summary": "British Cabinet Mission arrives to discuss the transfer of power to Indian leadership.",
+    "evidence": [
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Cabinet_Mission_to_India", "title": "Wikipedia: Cabinet Mission" }
+    ]
+  },
+  {
+    "id": "n3",
+    "title": "Constituent Assembly — First Session",
+    "date": "1946-12-09",
+    "category": "national",
+    "track": "national",
+    "summary": "The Constituent Assembly of India convenes for the first time to draft the Constitution.",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/gDqRsXzMxFs", "title": "Making of the Indian Constitution" }
+    ]
+  },
+  {
+    "id": "n4",
+    "title": "\uD83C\uDDEE\uD83C\uDDF3 Indian Independence",
+    "date": "1947-08-15",
+    "category": "national",
+    "track": "national",
+    "summary": "India gains independence from British colonial rule after nearly 200 years.",
+    "description": "At the stroke of midnight on August 15, 1947, India became an independent nation. Jawaharlal Nehru delivered his famous \"Tryst with Destiny\" speech to the Constituent Assembly, marking a new chapter in the history of the subcontinent.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Nehru_delivering_tryst_with_destiny.jpg/800px-Nehru_delivering_tryst_with_destiny.jpg",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/RUbEpMHBgaw", "title": "Indian Independence – Documentary" },
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Indian_independence_movement", "title": "Wikipedia: Indian Independence Movement" },
+      { "type": "image", "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/First_Cabinet_of_Independent_India.jpg/800px-First_Cabinet_of_Independent_India.jpg", "title": "First Cabinet of Independent India" }
+    ]
+  },
+  {
+    "id": "n5",
+    "title": "Assassination of Mahatma Gandhi",
+    "date": "1948-01-30",
+    "category": "national",
+    "track": "national",
+    "summary": "Mahatma Gandhi is assassinated by Nathuram Godse in New Delhi.",
+    "description": "Mohandas Karamchand Gandhi, the leader of India's non-violent independence movement, was shot dead at point-blank range during a prayer meeting at Birla House. His last words were reported to be \"He Ram\" (Oh God).",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/4hNMRL_FAOQ", "title": "Gandhi's Last Days" },
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Assassination_of_Mahatma_Gandhi", "title": "Wikipedia: Gandhi's Assassination" }
+    ]
+  },
+  {
+    "id": "n6",
+    "title": "Republic Day — Constitution Enacted",
+    "date": "1950-01-26",
+    "category": "national",
+    "track": "national",
+    "summary": "India's Constitution comes into effect, declaring India a sovereign democratic republic.",
+    "description": "The Constitution of India, drafted by a committee chaired by Dr. B.R. Ambedkar, came into effect on January 26, 1950—a date chosen to honour the 1930 Purna Swaraj (complete independence) declaration.",
+    "evidence": [
+      { "type": "youtube", "url": "https://www.youtube.com/embed/iOHkbgjVMzM", "title": "Republic Day – Historical Significance" },
+      { "type": "document", "url": "https://en.wikipedia.org/wiki/Republic_Day_(India)", "title": "Wikipedia: Republic Day" }
+    ]
+  }
+]

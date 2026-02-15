@@ -1,0 +1,44 @@
+<div
+  class="timeline-viewport"
+  #viewport
+  (scroll)="onScroll()"
+  (wheel)="onWheel($event)">
+
+  <div class="timeline-canvas" [style.width.px]="canvasWidth()">
+
+    <!-- ━━━ Time Axis Row (sticky top) ━━━━━━━━━━━━━━━ -->
+    <div class="timeline-row axis-row">
+      <div class="lane-label axis-label-cell">
+        <span class="era-text">ERA</span>
+      </div>
+      <div class="lane-content">
+        <app-time-axis
+          [ticks]="ticks()"
+          [totalWidth]="dataService.totalWidth()" />
+      </div>
+    </div>
+
+    <!-- ━━━ Swimlane Rows ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    @for (track of dataService.activeTracks(); track track.id; let i = $index) {
+      <div class="timeline-row swimlane-row">
+
+        <!-- Sticky lane label -->
+        <div class="lane-label" [style.borderLeftColor]="track.accentHex">
+          <span class="label-emoji">{{ track.iconEmoji }}</span>
+          <span class="label-name">{{ track.name }}</span>
+        </div>
+
+        <!-- Scrollable event content -->
+        <div class="lane-content">
+          <app-swimlane
+            [positionedEvents]="positionedEventsMap().get(track.id) ?? []"
+            [accentHex]="track.accentHex"
+            [totalWidth]="dataService.totalWidth()"
+            (eventClicked)="dataService.selectEvent($event)" />
+        </div>
+
+      </div>
+    }
+
+  </div>
+</div>

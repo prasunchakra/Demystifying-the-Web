@@ -1,0 +1,14 @@
+<div class="axis-canvas" [style.width.px]="totalWidth()">
+  @for (tick of ticks(); track tick.position) {
+    <div
+      class="tick"
+      [class.major]="tick.isMajor"
+      [class.minor]="!tick.isMajor"
+      [style.left.px]="tick.position">
+      <div class="tick-line"></div>
+      @if (tick.label) {
+        <span class="tick-label">{{ tick.label }}</span>
+      }
+    </div>
+  }
+</div>

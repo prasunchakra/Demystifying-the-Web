@@ -1,0 +1,19 @@
+<div
+  class="swimlane-canvas"
+  [style.width.px]="totalWidth()"
+  [style.minHeight.px]="laneHeight()">
+
+  @for (pe of positionedEvents(); track pe.event.id; let idx = $index) {
+    <div
+      class="event-wrapper"
+      [style.left.px]="pe.left"
+      [style.top.px]="pe.row * ROW_HEIGHT + 12"
+      [style.width.px]="pe.width"
+      [@cardEnter]>
+      <app-event-card
+        [event]="pe.event"
+        [accentHex]="accentHex()"
+        (clicked)="eventClicked.emit(pe.event)" />
+    </div>
+  }
+</div>
