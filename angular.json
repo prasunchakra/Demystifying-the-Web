@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "parallel-timeline": {
+    "parallelPast": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/parallel-timeline",
+            "outputPath": "dist/parallelPast",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -84,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "parallel-timeline:build:production"
+              "buildTarget": "parallelPast:build:production"
             },
             "development": {
-              "buildTarget": "parallel-timeline:build:development"
+              "buildTarget": "parallelPast:build:development"
             }
           },
           "defaultConfiguration": "development"

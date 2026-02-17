@@ -59,14 +59,7 @@
   line-height: 1.2;
 }
 
-.logo-text p {
-  font-size: 0.6rem;
-  color: #64748b;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 500;
-}
+/* subtitle removed – single-line logo */
 
 /* ── Track Dropdown ──────────────────────────────────── */
 .header-center {
